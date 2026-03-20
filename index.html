@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Actions 部署演示</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .content {
+            line-height: 1.6;
+            color: #444;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub Actions 部署演示</h1>
+        <p class="subtitle">自动化部署的简单示例</p>
+        
+        <div class="content">
+            <p>欢迎来到这个使用 GitHub Actions 自动部署的静态页面！每次推送到仓库时，GitHub Actions 都会自动构建并部署这个页面到 GitHub Pages。</p>
+            
+            <div class="feature">
+                <strong>✨ 主要特性：</strong>
+                <ul>
+                    <li>自动化的 CI/CD 流程</li>
+                    <li>推送到 main 分支自动部署</li>
+                    <li>完全免费的托管服务</li>
+                    <li>简单易用的配置</li>
+                </ul>
+            </div>
+            
+            <div class="feature">
+                <strong>🛠️ 技术栈：</strong><br>
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">GitHub Actions</span>
+                <span class="badge">GitHub Pages</span>
+            </div>
+            
+            <p style="text-align: center; margin-top: 30px;">
+                <em>修改代码并推送，查看自动部署的神奇效果！</em>
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Created with ❤️ using GitHub Actions</p>
+            <p>Last updated: <span id="update-time"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // 显示最后更新时间
+        document.getElementById('update-time').textContent = new Date().toLocaleDateString('zh-CN');
+    </script>
+</body>
+</html>
